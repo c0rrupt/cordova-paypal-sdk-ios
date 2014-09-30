@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.corrupt.paypal-sdk-ios"
+        version="2.4.2">
+      
+    <name>PayPal SDK for iOS</name>
+	<description>add PayPal iOS SDK to cordova project, as dependency of other plugins</description>
+	<keywords>paypal,sdk</keywords>
+
+	<engines>
+	    <engine name="cordova" version=">=3.0" />
+	</engines>
+	
+    <!-- ios -->
+    <platform name="ios">
+        <header-file src="libs/PayPalConfiguration.h" />
+        <header-file src="libs/PayPalFuturePaymentViewController.h" />
+        <header-file src="libs/PayPalMobile.h" />
+        <header-file src="libs/PayPalOAuthScopes.h" />
+        <header-file src="libs/PayPalPayment.h" />
+        <header-file src="libs/PayPalPaymentViewController.h" />
+        <header-file src="libs/PayPalProfileSharingViewController.h" />
+        <source-file src="libs/libPayPalMobile.a" framework="true" />
+
+        <framework src="AudioToolbox.framework" />
+        <framework src="AVFoundation.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="CoreMedia.framework" />
+        <framework src="MessageUI.framework" />
+        <framework src="MobileCoreServices.framework" />
+        <framework src="SystemConfiguration.framework" />
+    </platform>
+</plugin>
